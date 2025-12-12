@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* 🔹 Premium Gradient Background */
+body {
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card Box */
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #ffff;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* 🔹 App Header */
+.app-header {
+  margin-bottom: 20px;
+}
+.app-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  word-wrap: break-word;
+}
+.app-header .welcome {
+  font-size: 16px;
+  margin-top: 8px;
+  opacity: 0.95;
+  font-weight: 500;
+  color: #2f2fe;
+  word-wrap: break-word;
+}
+
+/* 🔹 Search Bar - Responsive Fix */
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(135deg, #ffffff, #e0f7fa);
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.search input {
+  flex: 1; /* input jitna bacha hua space lega */
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #222;
+  padding: 0 15px;
+  height: 55px;
+  font-size: 16px;
+}
+
+.search button {
+  border: none;
+  outline: none;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.search button img {
+  width: 20px;
+  filter: brightness(0) invert(1);
+}
+
+/* 🔹 Weather Info */
+.weather {
+  margin-top: 30px;
+  word-wrap: break-word;
+}
+.weather-icon {
+  width: 170px;
+  max-width: 100%;
+}
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+.humidity, .wind {
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+/* 🔹 Error */
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  display: none;
+  color: #b80b0b;
+  font-weight: 500;
+}
+
+/* 🔹 Fully Mobile Responsive */
+@media (max-width: 500px) {
+  .card {
+    padding: 25px 15px;
+  }
+
+  .app-header h1 {
+    font-size: 26px;
+  }
+
+  .app-header .welcome {
+    font-size: 14px;
+  }
+
+@media (max-width: 500px) {
+  .search {
+    height: 45px;
+    border-radius: 20px;
+  }
+
+  .search input {
+    height: 45px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .search button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .search button img {
+    width: 16px;
+  }
+}
+  .weather h1 {
+    font-size: 55px;
+  }
+
+  .weather h2 {
+    font-size: 32px;
+  }
+
+  .weather-icon {
+    width: 140px;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 5px;
+    margin-top: 30px;
+  }
+
+  .col img {
+    width: 30px;
+  }
+
+  .humidity, .wind {
+    font-size: 22px;
+  }
+}
